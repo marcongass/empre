@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, easeOut } from 'framer-motion';
 
 interface IndexItem {
   id: number;
@@ -31,7 +31,7 @@ export default function IndexSection({ items = [], onNavigate }: IndexSectionPro
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: 'easeOut' },
+      transition: { duration: 0.5, ease: easeOut },
     },
   };
 
