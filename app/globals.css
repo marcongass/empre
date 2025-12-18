@@ -22,5 +22,218 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ----- Custom styles migrated from original HTML ----- */
+
+html.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #0f172a; /* Slate 900 */
+  color: #f8fafc;
+  overflow-x: hidden;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+/* Accesibilidad: Aumento de tipografía global */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Mejora de contraste y legibilidad */
+button, a {
+  font-size: 1.05rem;
+}
+
+/* Tablas más accesibles */
+table {
+  font-size: 1.05rem;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+th {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Efecto Cristal */
+.glass-panel {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Gradientes de Texto */
+.text-gradient-gold {
+  background: linear-gradient(to right, #FCD34D, #F59E0B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gradient-blue {
+  background: linear-gradient(to right, #60A5FA, #3B82F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Fondo Animado sutil */
+.bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: -1;
+  animation: float 10s infinite ease-in-out;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-20px) scale(1.1); }
+}
+
+/* End migrated styles */
+
+/* ----- Estilos de Accesibilidad Mejorados ----- */
+
+/* Secciones principales */
+.section-header {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.section-description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Cards y paneles */
+.card-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Mejora de contraste para textos */
+.text-high-contrast {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Focus states para accesibilidad */
+button:focus, a:focus {
+  outline: 3px solid #FCD34D;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Mejora de espaciado para legibilidad */
+.space-large {
+  margin-bottom: 2rem;
+}
+
+/* Skip to content link para accesibilidad */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* Responsive adjustments para mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .section-header {
+    font-size: 1.5rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.15rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  table {
+    font-size: 1rem;
+  }
+
+  th, td {
+    padding: 0.8rem;
+  }
 }
