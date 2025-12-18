@@ -225,7 +225,7 @@ export default function ExecutivePresentation() {
         </div>
 
         {/* Section Dots Navigation */}
-        <div className="overflow-x-auto py-2">
+        <div className="hidden md:flex overflow-x-auto py-2">
           <div className="flex gap-2 justify-center whitespace-nowrap px-2">
             {sections.map((section, idx) => (
               <motion.button
