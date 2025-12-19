@@ -225,15 +225,15 @@ export default function ExecutivePresentation() {
         </div>
 
         {/* Section Dots Navigation */}
-        <div className="hidden md:flex overflow-x-auto py-2">
-          <div className="flex gap-2 justify-center whitespace-nowrap px-2">
+        <div className="flex flex-wrap gap-2 justify-center px-2 py-2">
+          <div className="flex flex-wrap gap-2 justify-center">
             {sections.map((section, idx) => (
               <motion.button
                 key={section.id}
                 onClick={() => goToSection(idx)}
                 whileHover={shouldReduceMotion ? {} : { scale: 1.06 }}
                 whileTap={shouldReduceMotion ? {} : { scale: 0.96 }}
-                className={`min-w-[44px] px-3 py-2 rounded-full text-sm ${isIndex ? 'md:text-base' : 'md:text-lg'} font-medium transition ${
+                className={`min-w-[44px] px-3 py-2 rounded-full text-xs sm:text-sm ${isIndex ? 'md:text-base' : 'md:text-lg'} font-medium transition ${
                   idx === currentIndex
                     ? 'bg-amber-600 text-white shadow'
                     : 'bg-slate-200 text-slate-700 hover:bg-slate-300'
